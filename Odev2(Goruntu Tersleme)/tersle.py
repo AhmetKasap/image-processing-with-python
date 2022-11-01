@@ -19,7 +19,7 @@ for i in range(img.shape[0]):
         if(img[i,j]>img_max):
             img_max=img[i,j]
 
-cv2.imshow("orijinal",img)        
+cv2.imshow("original",img)        
 for i in range(img.shape[0]):
     for j in range(img.shape[1]):
         img[i,j] = img_max-img[i,j]
